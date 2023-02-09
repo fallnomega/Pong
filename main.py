@@ -22,21 +22,16 @@ screen.title("Pong")
 screen.tracer(0)
 screen.listen()
 
-
-player2 = paddle.Paddle(350)
 player1 = paddle.Paddle(-350)
-screen.onkey(player1.move_up,"Up")
-screen.onkey(player1.move_down,"Down")
+player2 = paddle.Paddle(350)
+screen.onkey(player1.move_up, "Up")
+screen.onkey(player1.move_down, "Down")
 
-screen.onkey(player2.move_up,"w")
-screen.onkey(player2.move_down,"s")
-
-
+screen.onkey(player2.move_up, "w")
+screen.onkey(player2.move_down, "s")
 
 game_is_on = True
 while game_is_on:
     screen.update()
-
-
 
 screen.exitonclick()
