@@ -1,16 +1,24 @@
-# This is a sample Python script.
+# classes in pong
+# paddles/slider
+# individual player score
+# ball
+import turtle
+import paddle
+from turtle import Screen
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+# TODO list
+# 2 Crate and move the paddle
+# 3 Create another paddle
+# 4 Create the ball and make it move
+# 5 Detect collision with wall and bounce
+# 6 Detect collision with paddle
+# 7 Detect when paddle misses
+# 8 Keep Score
 
+screen = turtle.Screen()
+screen.screensize(canvwidth=800, canvheight=600, bg="black")
+screen.title("Pong")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+player1 = paddle.Paddle()
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+screen.exitonclick()
