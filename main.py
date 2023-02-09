@@ -6,6 +6,7 @@ import time
 import turtle
 import paddle
 import ball
+import ball
 from turtle import Screen
 
 # TODO list
@@ -24,6 +25,7 @@ screen.listen()
 
 player1 = paddle.Paddle(-350)
 player2 = paddle.Paddle(350)
+ball = ball.Ball()
 screen.onkey(player1.move_up, "Up")
 screen.onkey(player1.move_down, "Down")
 
@@ -33,5 +35,7 @@ screen.onkey(player2.move_down, "s")
 game_is_on = True
 while game_is_on:
     screen.update()
+    time.sleep(.2)
+    ball.ball_move()
 
 screen.exitonclick()
