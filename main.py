@@ -5,11 +5,11 @@
 import time
 import turtle
 import paddle
+import ball
 from turtle import Screen
 
 # TODO list
-# 2 Crate and move the paddle
-# 3 Create another paddle
+
 # 4 Create the ball and make it move
 # 5 Detect collision with wall and bounce
 # 6 Detect collision with paddle
