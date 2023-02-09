@@ -35,7 +35,7 @@ screen.onkey(player2.move_down, "s")
 game_is_on = True
 while game_is_on:
     screen.update()
-    time.sleep(.2)
+    # time.sleep(.1)
     ball.ball_move()
 
 screen.exitonclick()

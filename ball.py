@@ -9,10 +9,9 @@ class Ball(Turtle):
         self.shapesize(stretch_wid=1, stretch_len=1)
         self.shape("circle")
         self.color("white")
-        self.speed(10)
 
     def ball_move(self):
 
-        new_y = self.ycor() + 20
-        new_x = self.xcor() + 20
+        new_y = self.ycor() + 2
+        new_x = self.xcor() + 2
         self.goto(new_x, new_y)
