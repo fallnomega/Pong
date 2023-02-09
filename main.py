@@ -23,9 +23,13 @@ screen.tracer(0)
 screen.listen()
 
 
-player = paddle.Paddle()
-screen.onkey(player.move_up,"Up")
-screen.onkey(player.move_down,"Down")
+player2 = paddle.Paddle(350)
+player1 = paddle.Paddle(-350)
+screen.onkey(player1.move_up,"Up")
+screen.onkey(player1.move_down,"Down")
+
+screen.onkey(player2.move_up,"w")
+screen.onkey(player2.move_down,"s")
 
 
 
